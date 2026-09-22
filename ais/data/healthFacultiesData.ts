@@ -483,10 +483,11 @@ export const FACULTIES: FacultyData[] = [
               { exam: 'TGAT', code: '90', name: '90 TGAT ความถนัดทั่วไป', pct: 20, min: null },
               { exam: 'TPAT3', code: '30', name: '30 TPAT3 ความถนัดวิทยาศาสตร์ เทคโนโลยี และวิศวกรรมศาสตร์', pct: 20, min: null },
               { exam: 'A-Level', code: '61', name: 'A-Level 61 คณิตศาสตร์ประยุกต์ 1', pct: 10, min: null },
-              { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 15, min: null },
-              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 15, min: null }
+              { exam: 'A-Level', code: '64', name: 'A-Level 64 ฟิสิกส์', pct: 10, min: null },
+              { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 10, min: null },
+              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 10, min: null }
             ],
-            note: 'จำนวนรับ 30 คน ใช้ TPAT3 สัดส่วน 20% ร่วมกับ GPAX 20%, TGAT 20% และ A-Level 40%',
+            note: 'จำนวนรับ 30 คน ใช้ TPAT3 สัดส่วน 20% ร่วมกับ GPAX 20%, TGAT 20% และ A-Level 4 วิชา (คณิต1+ฟิสิกส์+เคมี+ชีวะ) 40%',
             noteType: 'info'
           }
         ]
@@ -1811,12 +1812,108 @@ export const FACULTIES: FacultyData[] = [
             minTotal: null,
             weights: [{ label: 'A-Level (4 วิชา)', pct: 100, color: '#0E3B34' }],
             subjects: [
-              { exam: 'A-Level', code: '62', name: 'A-Level 62 คณิตศาสตร์ประยุกต์ 2', pct: 25, min: null },
+              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 25, min: null },
               { exam: 'A-Level', code: '64', name: 'A-Level 64 ฟิสิกส์', pct: 25, min: null },
               { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 25, min: null },
               { exam: 'A-Level', code: '82', name: 'A-Level 82 ภาษาอังกฤษ', pct: 25, min: null }
             ],
             note: 'จำนวนรับ 30 คน แผนการเรียนวิทย์-คณิต',
+            noteType: 'info'
+          },
+          {
+            code: '3178',
+            title: 'หลักสูตรควบ 2 ปริญญา อนามัยสิ่งแวดล้อม + นิติศาสตรบัณฑิต (มพ.)',
+            gpax: 'ไม่กำหนดขั้นต่ำ',
+            gpaxValue: null,
+            minTotal: null,
+            weights: [{ label: 'A-Level (4 วิชา)', pct: 100, color: '#0E3B34' }],
+            subjects: [
+              { exam: 'A-Level', code: '61', name: 'A-Level 61 คณิตศาสตร์ประยุกต์ 1', pct: 25, min: null },
+              { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 25, min: null },
+              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 25, min: null },
+              { exam: 'A-Level', code: '82', name: 'A-Level 82 ภาษาอังกฤษ', pct: 25, min: null }
+            ],
+            note: 'จำนวนรับ 5 คน หลักสูตรวิทยาศาสตรบัณฑิต สาขาอนามัยสิ่งแวดล้อม ควบ นิติศาสตรบัณฑิต',
+            noteType: 'info'
+          },
+          {
+            code: '3179',
+            title: 'หลักสูตรควบ 2 ปริญญา อนามัยสิ่งแวดล้อม + เศรษฐศาสตรบัณฑิต (มพ.)',
+            gpax: 'ไม่กำหนดขั้นต่ำ',
+            gpaxValue: null,
+            minTotal: null,
+            weights: [{ label: 'A-Level (4 วิชา)', pct: 100, color: '#0E3B34' }],
+            subjects: [
+              { exam: 'A-Level', code: '61', name: 'A-Level 61 คณิตศาสตร์ประยุกต์ 1', pct: 25, min: null },
+              { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 25, min: null },
+              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 25, min: null },
+              { exam: 'A-Level', code: '82', name: 'A-Level 82 ภาษาอังกฤษ', pct: 25, min: null }
+            ],
+            note: 'จำนวนรับ 5 คน หลักสูตรวิทยาศาสตรบัณฑิต สาขาอนามัยสิ่งแวดล้อม ควบ เศรษฐศาสตรบัณฑิต',
+            noteType: 'info'
+          },
+          {
+            code: '3180',
+            title: 'หลักสูตรควบ 2 ปริญญา อาชีวอนามัยฯ + วิศวกรรมสิ่งแวดล้อม (มพ.)',
+            gpax: 'ไม่กำหนดขั้นต่ำ',
+            gpaxValue: null,
+            minTotal: null,
+            weights: [{ label: 'A-Level (4 วิชา)', pct: 100, color: '#0E3B34' }],
+            subjects: [
+              { exam: 'A-Level', code: '64', name: 'A-Level 64 ฟิสิกส์', pct: 25, min: null },
+              { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 25, min: null },
+              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 25, min: null },
+              { exam: 'A-Level', code: '82', name: 'A-Level 82 ภาษาอังกฤษ', pct: 25, min: null }
+            ],
+            note: 'จำนวนรับ 5 คน หลักสูตรวิทยาศาสตรบัณฑิต สาขาอาชีวอนามัยและความปลอดภัย ควบ วิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมสิ่งแวดล้อม',
+            noteType: 'info'
+          },
+          {
+            code: '3181',
+            title: 'หลักสูตรควบ 2 ปริญญา ส่งเสริมสุขภาพ + เศรษฐศาสตรบัณฑิต (มพ.)',
+            gpax: 'ไม่กำหนดขั้นต่ำ',
+            gpaxValue: null,
+            minTotal: null,
+            weights: [{ label: 'A-Level (4 วิชา)', pct: 100, color: '#0E3B34' }],
+            subjects: [
+              { exam: 'A-Level', code: '61', name: 'A-Level 61 คณิตศาสตร์ประยุกต์ 1', pct: 25, min: null },
+              { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 25, min: null },
+              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 25, min: null },
+              { exam: 'A-Level', code: '82', name: 'A-Level 82 ภาษาอังกฤษ', pct: 25, min: null }
+            ],
+            note: 'จำนวนรับ 5 คน หลักสูตรสาธารณสุขศาสตรบัณฑิต สาขาส่งเสริมสุขภาพ ควบ เศรษฐศาสตรบัณฑิต',
+            noteType: 'info'
+          },
+          {
+            code: '3182',
+            title: 'หลักสูตรควบ 2 ปริญญา อนามัยชุมชน + นิติศาสตรบัณฑิต (มพ.)',
+            gpax: 'ไม่กำหนดขั้นต่ำ',
+            gpaxValue: null,
+            minTotal: null,
+            weights: [{ label: 'A-Level (4 วิชา)', pct: 100, color: '#0E3B34' }],
+            subjects: [
+              { exam: 'A-Level', code: '61', name: 'A-Level 61 คณิตศาสตร์ประยุกต์ 1', pct: 25, min: null },
+              { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 25, min: null },
+              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 25, min: null },
+              { exam: 'A-Level', code: '82', name: 'A-Level 82 ภาษาอังกฤษ', pct: 25, min: null }
+            ],
+            note: 'จำนวนรับ 10 คน หลักสูตรสาธารณสุขศาสตรบัณฑิต สาขาวิชาอนามัยชุมชน ควบ นิติศาสตรบัณฑิต',
+            noteType: 'info'
+          },
+          {
+            code: '3183',
+            title: 'หลักสูตรควบ 2 ปริญญา อนามัยชุมชน + เศรษฐศาสตรบัณฑิต (มพ.)',
+            gpax: 'ไม่กำหนดขั้นต่ำ',
+            gpaxValue: null,
+            minTotal: null,
+            weights: [{ label: 'A-Level (4 วิชา)', pct: 100, color: '#0E3B34' }],
+            subjects: [
+              { exam: 'A-Level', code: '61', name: 'A-Level 61 คณิตศาสตร์ประยุกต์ 1', pct: 25, min: null },
+              { exam: 'A-Level', code: '65', name: 'A-Level 65 เคมี', pct: 25, min: null },
+              { exam: 'A-Level', code: '66', name: 'A-Level 66 ชีววิทยา', pct: 25, min: null },
+              { exam: 'A-Level', code: '82', name: 'A-Level 82 ภาษาอังกฤษ', pct: 25, min: null }
+            ],
+            note: 'จำนวนรับ 10 คน หลักสูตรสาธารณสุขศาสตรบัณฑิต สาขาวิชาอนามัยชุมชน ควบ เศรษฐศาสตรบัณฑิต',
             noteType: 'info'
           }
         ]
