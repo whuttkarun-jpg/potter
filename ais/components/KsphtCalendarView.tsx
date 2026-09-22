@@ -471,7 +471,7 @@ export const KsphtCalendarView: React.FC<KsphtCalendarViewProps> = ({ onNavigate
                           window.scrollTo({ top: 0, behavior: 'smooth' });
                         }}
                         title="ดูเวลานับถอยหลังของกิจกรรมนี้ด้านบน"
-                        className="text-xs px-2 py-1 rounded-md text-stone-500 hover:text-teal-700 hover:bg-stone-100 transition-colors hidden md:inline-flex items-center gap-1 cursor-pointer"
+                        className="text-xs px-2 py-1 rounded-md text-stone-500 hover:text-teal-700 hover:bg-stone-100 transition-colors inline-flex items-center gap-1 cursor-pointer"
                       >
                         <Clock className="w-3 h-3" />
                         <span>นับถอยหลัง</span>
