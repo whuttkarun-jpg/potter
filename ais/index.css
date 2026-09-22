@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light !important;
+}
+
+html, body, #root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Force Light Mode & Prevent Mobile Browser Dark Mode Inversion */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light !important;
+  }
+  html, body, #root {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+
+@layer base {
+  :root {
+    --font-heading: 'Bai Jamjuree', 'Noto Sans Thai', system-ui, -apple-system, sans-serif;
+    --font-body: 'Noto Sans Thai', 'Sarabun', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    color-scheme: light !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  body {
+    font-family: var(--font-body);
+    letter-spacing: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+    color: #0f172a;
+  }
+}
+
+/* Animations */
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideLeft {
+  animation: slideLeft 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, button, .no-print {
+    display: none !important;
+  }
+  article {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
