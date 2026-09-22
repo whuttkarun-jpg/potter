@@ -1,16 +1,37 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import InstallApp from "@/components/InstallApp";
 
 export const metadata: Metadata = {
   title: "ปฏิทิน กสพท70",
   description:
     "ปฏิทิน กสพท70 นับถอยหลัง Real-time กำหนดการสำคัญ พร้อมเครื่องมือสำรวจเกณฑ์คะแนนรอบ 3 Admission คณะสายสุขภาพ",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "กสพท70",
+  },
+  icons: {
+    icon: [
+      { url: "/icons/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180" }],
+  },
   openGraph: {
     title: "ปฏิทิน กสพท70",
     description:
       "ปฏิทิน กสพท70 นับถอยหลัง Real-time กำหนดการสำคัญ พร้อมเครื่องมือสำรวจเกณฑ์คะแนนรอบ 3 Admission คณะสายสุขภาพ",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0d9488",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -30,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="antialiased bg-white text-slate-900">
         {children}
+        <InstallApp />
         <footer
           className="no-print"
           style={{

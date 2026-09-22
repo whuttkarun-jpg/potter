@@ -10,6 +10,12 @@ out/
 # vercel
 .vercel/
 
+# pwa build artifacts (next-pwa สร้างใหม่ทุกครั้งตอน build)
+public/sw.js
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map
+
 # logs / os
 npm-debug.log*
 yarn-debug.log*
