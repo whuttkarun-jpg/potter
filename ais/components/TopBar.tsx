@@ -92,6 +92,9 @@ export const TopBar: React.FC<TopBarProps> = ({
           >
             <Compass className="w-4 h-4 text-teal-700" />
             <span>เกณฑ์คะแนน 10 คณะ</span>
+            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300">
+              ข้อมูลปี 69
+            </span>
           </button>
         </div>
       )}

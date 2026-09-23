@@ -170,6 +170,16 @@ export default function App() {
               ) : (
                 /* หน้าเกณฑ์คะแนน 10 คณะสายสุขภาพ */
                 <>
+                  <div className="p-4 rounded-xl border border-amber-300 bg-amber-50 text-xs sm:text-sm text-amber-900 leading-relaxed flex items-start gap-2.5">
+                    <AlertCircle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                    <div>
+                      <strong>ข้อมูลอ้างอิงปี 69 — อยู่ระหว่างตรวจสอบ:</strong>{" "}
+                      บางมหาวิทยาลัย/บางคณะยังไม่ครบและอาจคลาดเคลื่อนได้
+                      หน้านี้ใช้ดูประกอบการวางแผนเท่านั้น
+                      กรุณายึดประกาศทางการของมหาวิทยาลัยและ mytcas.com เป็นหลัก
+                    </div>
+                  </div>
+
                   <FacultyGrid
                     faculties={FACULTIES}
                     onSelectFaculty={handleSelectFaculty}
