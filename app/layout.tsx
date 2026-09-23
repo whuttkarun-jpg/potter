@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import InstallApp from "@/components/InstallApp";
 import FeedbackBox from "@/components/FeedbackBox";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "ปฏิทิน กสพท70",
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <InstallApp />
         <FeedbackBox />
+        <Analytics />
         <footer
           className="no-print"
           style={{
