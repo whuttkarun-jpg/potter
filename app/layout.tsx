@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import InstallApp from "@/components/InstallApp";
-import FeedbackBox from "@/components/FeedbackBox";
+// NOTE: เปิดคืนเมื่อรัน supabase/feedback_schema.sql แล้ว (เอาคอมเมนต์ 2 บรรทัดล่างออก)
+// import FeedbackBox from "@/components/FeedbackBox";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
@@ -54,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased bg-white text-slate-900">
         {children}
         <InstallApp />
-        <FeedbackBox />
+        {/* <FeedbackBox /> */}
         <Analytics />
         <footer
           className="no-print"
