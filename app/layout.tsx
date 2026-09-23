@@ -63,10 +63,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             padding: "24px 0 32px",
           }}
         >
-          ปฏิทิน กสพท70 · วันที่โดยประมาณ รอยืนยันประกาศทางการ ·{" "}
-          <a href="/admin" style={{ color: "#0f766e" }}>
-            แอดมิน (Supabase)
-          </a>
           <details style={{ marginTop: 8, fontSize: 12 }}>
             <summary style={{ cursor: "pointer", color: "#0f766e", fontWeight: 700 }}>
               📲 วิธีติดตั้งเป็นแอป (ฟรี)
