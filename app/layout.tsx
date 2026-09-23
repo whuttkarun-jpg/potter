@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import InstallApp from "@/components/InstallApp";
+import FeedbackBox from "@/components/FeedbackBox";
 
 export const metadata: Metadata = {
   title: "ปฏิทิน กสพท70",
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased bg-white text-slate-900">
         {children}
         <InstallApp />
+        <FeedbackBox />
         <footer
           className="no-print"
           style={{
