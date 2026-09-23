@@ -67,6 +67,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <a href="/admin" style={{ color: "#0f766e" }}>
             แอดมิน (Supabase)
           </a>
+          <details style={{ marginTop: 8, fontSize: 12 }}>
+            <summary style={{ cursor: "pointer", color: "#0f766e", fontWeight: 700 }}>
+              📲 วิธีติดตั้งเป็นแอป (ฟรี)
+            </summary>
+            <div style={{ marginTop: 6, lineHeight: 1.9 }}>
+              <b>Android (Chrome):</b> กดปุ่ม ⬇️ ติดตั้งแอป มุมขวาล่าง หรือเมนู ⋮ → ติดตั้งแอป
+              <br />
+              <b>iPhone (Safari):</b> กด Share → Add to Home Screen
+              <br />
+              <b>PC (Chrome/Edge):</b> กดไอคอนติดตั้ง ⤓ ใน address bar
+            </div>
+          </details>
         </footer>
       </body>
     </html>
